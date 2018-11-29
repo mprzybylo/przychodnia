@@ -37,9 +37,9 @@ public class WizityController {
         if (optionalWizyty.isPresent()) {
             Wizyty wizyty = optionalWizyty.get();
 
-            wizyty.setIdWizyty(nowaWizyta.getIdWizyty());
-            wizyty.setData_wizyty(nowaWizyta.getData_wizyty());
-            wizyty.setGodzina_wizyty(nowaWizyta.getGodzina_wizyty());
+            wizyty.setId(nowaWizyta.getId());
+            wizyty.setDataWizyty(nowaWizyta.getDataWizyty());
+            wizyty.setGodzinaWizyty(nowaWizyta.getGodzinaWizyty());
 
             return wizytaRepo.save(wizyty);
         } else return null;

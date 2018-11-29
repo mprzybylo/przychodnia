@@ -10,7 +10,7 @@ public class Wizyty  {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long idWizyty;
 
     @ManyToOne
     @JoinColumn(name = "pacjent_id")
@@ -20,20 +20,19 @@ public class Wizyty  {
     @ManyToOne
     @JoinColumn(name = "lekarzId")
     private Lekarz lekarz;
-
-    private Long Data_wizyty;
-    private Long Godzina_wizyty;
+    private Long dataWizyty;
+    private Long godzinaWizyty;
 
     @Enumerated(EnumType.STRING)
     private RodzajWizyt rodzajWizyt;
 
 
     public Long getId() {
-        return id;
+        return idWizyty;
     }
 
     public void setId(Long id) {
-        this.id = id;
+        this.idWizyty = idWizyty;
     }
 
     public Pacjent getPacjent() {
@@ -52,20 +51,20 @@ public class Wizyty  {
         this.lekarz = lekarz;
     }
 
-    public Long getData_wizyty() {
-        return Data_wizyty;
+    public Long getDataWizyty() {
+        return dataWizyty;
     }
 
-    public void setData_wizyty(Long data_wizyty) {
-        Data_wizyty = data_wizyty;
+    public void setDataWizyty(Long dataWizyty) {
+        this.dataWizyty = dataWizyty;
     }
 
-    public Long getGodzina_wizyty() {
-        return Godzina_wizyty;
+    public Long getGodzinaWizyty() {
+        return godzinaWizyty;
     }
 
-    public void setGodzina_wizyty(Long godzina_wizyty) {
-        Godzina_wizyty = godzina_wizyty;
+    public void setGodzinaWizyty(Long godzinaWizyty) {
+        this.godzinaWizyty = godzinaWizyty;
     }
 
     public RodzajWizyt getRodzajWizyt() {

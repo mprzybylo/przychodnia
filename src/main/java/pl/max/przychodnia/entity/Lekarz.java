@@ -9,44 +9,44 @@ public class Lekarz {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id_lekarza;
-    private String Imie_lekarza;
-    private String Nazwisko_lekarza;
-    private String Specjalnosc;
+    private Long idLekarza;
+    private String imieLekarza;
+    private String nazwiskoLekarza;
+    private String specjalnoscLekarza;
 
     @OneToMany(mappedBy = "lekarz")
     private List<Wizyty> wizytyList;
 
-    public Long getId_lekarza() {
-        return Id_lekarza;
+    public Long getIdLekarza() {
+        return idLekarza;
     }
 
-    public void setId_lekarza(Long id_lekarza) {
-        Id_lekarza = id_lekarza;
+    public void setIdLekarza(Long idLekarza) {
+        this.idLekarza = idLekarza;
     }
 
-    public String getImie_lekarza() {
-        return Imie_lekarza;
+    public String getImieLekarza() {
+        return imieLekarza;
     }
 
-    public void setImie_lekarza(String imie_lekarza) {
-        Imie_lekarza = imie_lekarza;
+    public void setImieLekarza(String imieLekarza) {
+        this.imieLekarza = imieLekarza;
     }
 
-    public String getNazwisko_lekarza() {
-        return Nazwisko_lekarza;
+    public String getNazwiskoLekarza() {
+        return nazwiskoLekarza;
     }
 
-    public void setNazwisko_lekarza(String nazwisko_lekarza) {
-        Nazwisko_lekarza = nazwisko_lekarza;
+    public void setNazwiskoLekarza(String nazwiskoLekarza) {
+        this.nazwiskoLekarza = nazwiskoLekarza;
     }
 
-    public String getSpecjalnosc() {
-        return Specjalnosc;
+    public String getSpecjalnoscLekarza() {
+        return specjalnoscLekarza;
     }
 
-    public void setSpecjalnosc(String specjalnosc) {
-        Specjalnosc = specjalnosc;
+    public void setSpecjalnoscLekarza(String specjalnoscLekarza) {
+        this.specjalnoscLekarza = specjalnoscLekarza;
     }
 
     public List<Wizyty> getWizytyList() {

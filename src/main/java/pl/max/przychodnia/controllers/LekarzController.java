@@ -38,10 +38,10 @@ public class LekarzController {
         if (optionalLekarz.isPresent()) {
             Lekarz lekarz = optionalLekarz.get();
 
-            infoLekarz.setId_lekarza(infoLekarz.getId_lekarza());
-            infoLekarz.setImie_lekarz(infoLekarz.getImie_lekarz());
-            infoLekarz.setNazwisko_lekarz(infoLekarz.getNazwisko_lekarz());
-            infoLekarz.setSpecjalnosc(infoLekarz.getSpecjalnosc());
+            infoLekarz.setIdLekarza(infoLekarz.getIdLekarza());
+            infoLekarz.setImieLekarza(infoLekarz.getImieLekarza());
+            infoLekarz.setNazwiskoLekarza(infoLekarz.getNazwiskoLekarza());
+            infoLekarz.setSpecjalnoscLekarza(infoLekarz.getSpecjalnoscLekarza());
             return lekarzRepo.save(lekarz);
         } else return null;
 

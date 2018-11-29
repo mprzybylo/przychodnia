@@ -35,9 +35,9 @@ public class PacjentController {
         if (optionalPacjent.isPresent()) {
             Pacjent pacjent = optionalPacjent.get();
 
-            pacjent.setImie(nowyPacjent.getImie());
-            pacjent.setNazwisko(nowyPacjent.getNazwisko());
-            pacjent.setWiek_pacjenta(nowyPacjent.getWiek_pacjeta());
+            pacjent.setImiePacjenta(nowyPacjent.getImiePacjenta());
+            pacjent.setNazwiskoPacjenta(nowyPacjent.getNazwiskoPacjenta());
+            pacjent.setWiekPacjeta(nowyPacjent.getWiekPacjeta());
             return pacjentRepo.save(pacjent);
 
         } else return null;

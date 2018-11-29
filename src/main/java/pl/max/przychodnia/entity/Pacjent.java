@@ -14,46 +14,46 @@ public class Pacjent {
     @Id
     @Column(name = "pacjent_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id_pacjeta;
-    private String Imie;
-    private String Nazwisko;
-    private Long Wiek_pacjeta;
+    private Long idPacjeta;
+    private String imiePacjenta;
+    private String nazwiskoPacjenta;
+    private Long wiekPacjeta;
 
 
     @OneToMany(mappedBy = "pacjent")
     private List<Wizyty> wizytyList;
 
 
-    public Long getId_pacjeta() {
-        return Id_pacjeta;
+    public Long getIdPacjeta() {
+        return idPacjeta;
     }
 
-    public void setId_pacjeta(Long id_pacjeta) {
-        Id_pacjeta = id_pacjeta;
+    public void setIdPacjeta(Long idPacjeta) {
+        this.idPacjeta = idPacjeta;
     }
 
-    public String getImie() {
-        return Imie;
+    public String getImiePacjenta() {
+        return imiePacjenta;
     }
 
-    public void setImie(String imie) {
-        Imie = imie;
+    public void setImiePacjenta(String imiePacjenta) {
+        this.imiePacjenta = imiePacjenta;
     }
 
-    public String getNazwisko() {
-        return Nazwisko;
+    public String getNazwiskoPacjenta() {
+        return nazwiskoPacjenta;
     }
 
-    public void setNazwisko(String nazwisko) {
-        Nazwisko = nazwisko;
+    public void setNazwiskoPacjenta(String nazwiskoPacjenta) {
+        this.nazwiskoPacjenta = nazwiskoPacjenta;
     }
 
-    public Long getWiek_pacjeta() {
-        return Wiek_pacjeta;
+    public Long getWiekPacjeta() {
+        return wiekPacjeta;
     }
 
-    public void setWiek_pacjenta(Long wiek_pacjeta) {
-        Wiek_pacjeta = wiek_pacjeta;
+    public void setWiekPacjeta(Long wiekPacjeta) {
+        this.wiekPacjeta = wiekPacjeta;
     }
 
     public List<Wizyty> getWizytyList() {
